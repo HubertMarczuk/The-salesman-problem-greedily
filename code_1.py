@@ -13,7 +13,7 @@ class Salesman(object):
 
     def __init__(self):
         self.window = Tk()
-        self.window.geometry("650x950")
+        self.window.geometry("750x950")
         self.window.title("Problem komiwojażera")
         self.BuildWindow()
         self.window.mainloop()
@@ -33,7 +33,7 @@ class Salesman(object):
         self.space1.grid(row=1, column=0, sticky=W)
 
         self.etiquette2 = Label(self.window)
-        self.etiquette2["text"] = "Wprowadź współrzędne punktów:"
+        self.etiquette2["text"] = "Wprowadź współrzędne punktów (wartości całkowite 0-100):"
         self.etiquette2.grid(row=2, column=0, sticky=W)
 
         self.point_etiquettes = []
@@ -217,9 +217,9 @@ class Salesman(object):
         plt.xlim(-1, 101)
         plt.ylim(-1, 101)
 
-        okno_wykresu = FigureCanvasTkAgg(fig, self.window)
-        okno_wykresu.draw()
-        okno_wykresu.get_tk_widget().grid(row=28, column=4, sticky=W)
+        plot_window = FigureCanvasTkAgg(fig, self.window)
+        plot_window.draw()
+        plot_window.get_tk_widget().grid(row=28, column=4, sticky=W)
 
 
 k = Salesman()
