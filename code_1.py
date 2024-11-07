@@ -194,7 +194,7 @@ class Salesman(object):
         full_distance = round(full_distance, 2)
         text = "Trasa wyznaczona. Całkowita długość: " + str(full_distance) +"\n\nWybrane krawędzie:\n"
         for i in range(len(distances)):
-            text += "Między punktami " + str(path[i][0]) + " a " + str(path[i][1]) + ". Długość: " + str(distances[i]) + "\n"
+            text += "Między punktami " + str(path[i][0]+1) + " a " + str(path[i][1]+1) + ". Długość: " + str(distances[i]) + "\n"
         return text
     
     def Draw(self, path, x, y):
