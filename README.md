@@ -12,8 +12,10 @@ Users can manually input coordinates or automatically generate random points by 
 Additionally, the application displays the selected edges in the order of their inclusion in the solution, sorted by their length from the shortest.
 
 Technologies Used
-Python 3.x
-tkinter (standard Python library)
+Python 3.x,
+tkinter (standard Python library),
+numpy,
+matplotlib
 
 Features
 Finding a path that visits all given points exactly once and returns to the start
