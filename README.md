@@ -26,12 +26,11 @@ Display of edges ordered by their length during the process
 
 How to Run
 1. Clone the repository.
-2.You have two options to run the application:
-2a) Launch the provided komiwojazer.exe file directly.
+2. You have two options to run the application:
+a)  Launch the provided komiwojazer.exe file directly.
   (No need to have Python installed)
-2b): Run the Python script manually:
+b)  Run the Python script manually:
   Make sure you have Python 3.10 installed.
   Make sure you have the tkinter library available (it is included by default with standard Python installation).
-
   Run the script:
   python code_1.py
